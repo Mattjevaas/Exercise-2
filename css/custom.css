@@ -1,0 +1,150 @@
+.button1
+{
+    background-color: #235dd1;
+    border: 0;
+    box-shadow: 0 8px #5277c0;
+    font-size: 24pt;
+    padding: 5px 20px !important;
+    border-radius: 50px;
+    color: white;
+}
+
+.button1#titik
+{
+    background-color: #235dd1;
+    border: 0;
+    box-shadow: 0 8px #5277c0;
+    font-size: 24pt;
+    padding: 5px 25px !important;
+    border-radius: 50px;
+    color: white;
+}
+
+.button1#AC
+{
+    background-color: #235dd1;
+    border: 0;
+    box-shadow: 0 8px #5277c0;
+    font-size: 24pt;
+    padding: 5px 10px !important;
+    border-radius: 50px;
+    color: white;
+}
+
+.button1 a{
+    text-decoration: none;
+    color: #fff;
+}
+.button1:hover{
+    background-color: #235dd1;
+}
+
+.button1:active{
+    box-shadow: 0 4px #5277c0;
+    transform: translateY(4px);
+}
+
+.button2
+{
+    background-color: #e6803a;
+    border: 0;
+    box-shadow: 0 8px #e49c6b;
+    font-size: 24pt;
+    padding: 5px 25px !important;
+    border-radius: 50px;
+    color: white;
+}
+
+.button2#plus
+{
+    background-color: #e6803a;
+    border: 0;
+    box-shadow: 0 8px #e49c6b;
+    font-size: 24pt;
+    padding: 5px 22px !important;
+    border-radius: 50px;
+    color: white;
+}
+
+.button2 a{
+    text-decoration: none;
+    color: #fff;
+}
+.button2:hover{
+    background-color: #e6803a;
+}
+
+.button2:active{
+    box-shadow: 0 4px #e49c6b;
+    transform: translateY(4px);
+}
+
+.button3
+{
+    background-color: #c3000b;
+    border: 0;
+    box-shadow: 0 8px #8a080f;
+    font-size: 24pt;
+    padding: 5px 80px !important;
+    border-radius: 50px;
+    color: white;
+}
+
+.button3 a{
+    text-decoration: none;
+    color: #fff;
+}
+.button3:hover{
+    background-color: #c3000b;
+}
+
+.button3:active{
+    box-shadow: 0 4px #8a080f;
+    transform: translateY(4px);
+}
+
+.button4
+{
+    background-color: #c3000b;
+    border: 0;
+    box-shadow: 0 8px #8a080f;
+    font-size: 20pt;
+    padding: 10px 11px !important;
+    border-radius: 50px;
+    color: white;
+}
+
+.button4 a{
+    text-decoration: none;
+    color: #fff;
+}
+.button4:hover{
+    background-color: #c3000b;
+}
+
+.button4:active{
+    box-shadow: 0 4px #8a080f;
+    transform: translateY(4px);
+}
+
+.footer
+{
+    background-color: white !important; 
+    margin-top:40px; 
+    padding-bottom:0; 
+}
+
+@font-face {
+	font-family: 'DSDIGI';
+	src: url('../font/DSDIGI.eot');
+	src: local('DSDIGI'), url('../font/DSDIGI.woff') format('woff'), url('../font/DSDIGI.ttf') format('truetype');
+}
+
+#textField {
+    font-family: 'DSDIGI' !important;
+    height: 80px;
+    font-size: 3rem;
+    text-align:right;
+}
+
+
