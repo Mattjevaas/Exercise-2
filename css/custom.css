@@ -66,6 +66,17 @@
     color: white;
 }
 
+.button2#divide
+{
+    background-color: #e6803a;
+    border: 0;
+    box-shadow: 0 8px #e49c6b;
+    font-size: 24pt;
+    padding: 5px 29px !important;
+    border-radius: 50px;
+    color: white;
+}
+
 .button2 a{
     text-decoration: none;
     color: #fff;
