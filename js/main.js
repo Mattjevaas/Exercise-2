@@ -1,7 +1,8 @@
 
 let total='';
+let totalasli='';
 
-function setValue(value)
+function addValue(value)
 {
     if(total.length==0)
     {
@@ -11,28 +12,54 @@ function setValue(value)
         }
     }
 
-    total += value;
+    if(value=='/')
+    {
+        total += ':';
+    }
+    else if(value=='*')
+    {
+        total += 'x';
+    }
+    else
+    {
+        total +=value;
+    }
+
+    totalasli += value;
     document.getElementById('textField').value= total;
 }
 
 function hitung()
 {
-    let hasil = document.getElementById('textField').value;
-    let hitung = math.eval(hasil);
-    document.getElementById('textField').value=hitung;
+    let hitung = math.eval(totalasli);
+    total=String(hitung);
+    totalasli=String(hitung)
+    document.getElementById('textField').value=total;
 }
 
 function refresh()
 {
     total='';
+    totalasli='';
     document.getElementById('textField').value= '0';
 }
 
 function deleteValue()
 {
-    total=document.getElementById('textField').value;
-    jumlah=total.length-1;
-    temp=total.slice(0,jumlah);    
+    let jumlah=total.length-1;
+    let temp=total.slice(0,jumlah);    
     total=temp;
-    document.getElementById('textField').value=total;
+
+    let jumlah2=totalasli.length-1;
+    let temp2=totalasli.slice(0,jumlah2);    
+    totalasli=temp2;
+
+    if(total.length==0)
+    {
+        document.getElementById('textField').value='0';
+    }
+    else
+    {
+        document.getElementById('textField').value=total;
+    }
 }
