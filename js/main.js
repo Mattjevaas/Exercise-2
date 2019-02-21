@@ -1,10 +1,9 @@
 
 let total='';
-let counter=0;
 
 function setValue(value)
 {
-    if(counter==0)
+    if(total.length==0)
     {
         if(value=='/' || value=='*' || value=='.' || value=='0')
         {
@@ -12,12 +11,8 @@ function setValue(value)
         }
     }
 
-    if(counter<=17)
-    {
-        total += value;
-        document.getElementById('textField').value= total;
-        counter++;
-    }
+    total += value;
+    document.getElementById('textField').value= total;
 }
 
 function hitung()
@@ -31,7 +26,6 @@ function refresh()
 {
     total='';
     document.getElementById('textField').value= '0';
-    counter=0;
 }
 
 function deleteValue()
