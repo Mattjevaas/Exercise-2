@@ -195,4 +195,11 @@ document.addEventListener('keydown',function(event){
         document.getElementById('textField').value= total;    
     }
 
+    if(event.keyCode==190 || event.keyCode==110)
+    {
+        total += '.';
+        totalasli += '.';
+        document.getElementById('textField').value= total;    
+    }
+
 });
