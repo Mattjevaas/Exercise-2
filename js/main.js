@@ -31,17 +31,22 @@ function addValue(value)
 
 function hitung()
 {
-    let hitung = math.eval(totalasli);
-    total=String(hitung);
-    totalasli=String(hitung)
-    document.getElementById('textField').value=total;
+
+    if(total.length!=0)
+    {
+        let hitung = math.eval(totalasli);
+        total=String(hitung);
+        totalasli=String(hitung)
+        document.getElementById('textField').value=total;
+    }
 }
 
 function refresh()
 {
-    total='';
-    totalasli='';
-    document.getElementById('textField').value= '0';
+        total='';
+        totalasli='';
+        document.getElementById('textField').value= '0';
+        
 }
 
 function deleteValue()
@@ -73,7 +78,7 @@ document.addEventListener('keydown',function(event){
         refresh();
     }
     
-    if(event.keyCode==13 || event.keyCode==187 || event.keyCode==13)
+    if(event.keyCode==13 || event.keyCode==187 )
     {
         hitung();
     }
